@@ -1,33 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | NFT preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
 
-  Equilibrium #3429
+<body class="flex-center">
+  <main>
+    <article class="nft-card">
+      <img class="nft-card__img" src="./images/image-equilibrium.jpg" alt="nft">
+      <h1 class="nft-card__name txt-white">Equilibrium #3429</h1>
+      <p class="nft-card__desc">Our Equilibrium collection promotes balance and calm.</p>
+      <div class="flex-group">
+        <div class="nft-card__price"> <img src="./images/icon-ethereum.svg" alt="ethereum"> 0.041 ETH</div>
+        <div class="nft-card__date"> <img src="./images/icon-clock.svg" alt="clock"> 3 days left</div>
+      </div>
+      <div class="nft-card__creator-info">
+        <img class="nft-card__creator-info__avatar" src="./images/image-avatar.png" alt="avatar">
+        <div>Creation of <span class="txt-white">Jules Wyvern</span></div>
+      </div>
+    </article>
+  </main>
 
-  Our Equilibrium collection promotes balance and calm.
 
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+
+
+
+
+
 </body>
+
 </html>
