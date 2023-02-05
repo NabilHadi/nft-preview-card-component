@@ -133,6 +133,11 @@ html {
 
 .txt-white {
   color: var(--clr-neutral-white-100);
+  cursor: pointer;
+}
+
+.txt-white:hover {
+  color: var(--clr-secondary);
 }
 
 .flex-group {
@@ -159,9 +164,28 @@ body {
   gap: 1rem;
   max-width: 350px;
 }
+.img-container {
+  cursor: pointer;
+  position: relative;
+}
 
 .nft-card__img {
+  display: block;
   border-radius: 10px;
+}
+
+.img-container:hover::after {
+  content: "";
+  position: absolute;
+  border-radius: 10px;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background: url("./images/icon-view.svg") hsla(178, 100%, 50%, 0.5) no-repeat
+    center;
 }
 
 .nft-card__name {
