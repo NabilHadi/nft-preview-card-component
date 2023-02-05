@@ -166,7 +166,7 @@ body {
 
 .nft-card__name {
   font-size: 1.38rem;
-  font-weight: var(--fw-semi-bold);
+  font-weight: var(--fw-regular);
   margin-top: 0.5rem;
 }
 
@@ -191,8 +191,29 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
 .nft-card__creator-info__avatar {
   width: 2rem;
   border: 1px solid var(--clr-neutral-white-100);
   border-radius: 50%;
+  font-weight: var(--fw-thin);
+}
+
+@media (min-width: 760px) {
+  .nft-card {
+    box-shadow: 0px 10px 30px 10px var(--clr-neutral-blue-900),
+      0px 5px 10px 5px var(--clr-neutral-blue-900);
+  }
+
+  .nft-card__desc {
+    font-size: 1.14rem;
+  }
+
+  .flex-group {
+    padding-bottom: 1.5rem;
+  }
+
+  .nft-card__creator-info {
+    padding-bottom: 0.5rem;
+  }
 }
